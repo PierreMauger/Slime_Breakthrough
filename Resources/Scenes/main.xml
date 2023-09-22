@@ -1,0 +1,27 @@
+<Scene>
+  <Entities>
+    <Entity id="0" name="MainCamera">
+      <Components>
+        <Transform position="0 -0.5 -5" scale="0.5 0.5 0.5" />
+        <Camera forward="0 0 1" />
+      </Components>
+    </Entity>
+    <Entity id="1" name="ChangeSceneKeyPressed">
+      <Components>
+        <ChangeSceneKeyPressed nextScene="level0" logo="2" pressSpace="3" duration="5" />
+      </Components>
+    </Entity>
+    <Entity id="2" name="Logo">
+      <Components>
+        <Transform scale="0 0 0" />
+        <Billboard name="SlimeBreakthroughLogo.png" lockYAxis="true" />
+      </Components>
+    </Entity>
+    <Entity id="3" name="PressSpace">
+      <Components>
+        <Transform position="0 -2 0" scale="1 0.1 1"/>
+        <Billboard name="PressSpace.png" lockYAxis="true" />
+      </Components>
+    </Entity>
+  </Entities>
+</Scene>
