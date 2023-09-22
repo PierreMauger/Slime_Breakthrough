@@ -4,7 +4,7 @@ public class RotateBehaviour : CustomComponent
 {
     public float speed = 5.0f;
 
-    public float time = 0.0f;
+    private float time = 0.0f;
     private Transform transform;
 
     public void onInit()

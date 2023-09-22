@@ -1,0 +1,115 @@
+<Scene>
+  <Entities>
+    <Entity id="0" name="MainCamera">
+      <Components>
+        <Transform position="0 1 -15" scale="0.5 0.5 0.5" />
+        <Camera forward="0 0 1" />
+        <ThirdPersonCamera distance="10" playerEntity="3" sensibility="0.1" />
+      </Components>
+    </Entity>
+    <Entity id="1" name="MainLight">
+      <Components>
+        <Transform position="3 0 0" rotation="25 -15 40" scale="0.5 0.5 0.5" />
+        <Light type="Dir" />
+      </Components>
+    </Entity>
+    <Entity id="2" name="Skybox">
+      <Components>
+        <Cubemap name="Sky2" />
+      </Components>
+    </Entity>
+
+    <Entity id="3" name="Player">
+      <Components>
+        <Transform position="0 0 -5" rotation="0 -90 0" />
+        <Model name="Slime" />
+        <CharacterController />
+        <Collider type="Sphere" radius="0.7" tag="player" />
+        <SlimeControllable speed="10" cameraEntity="0" />
+      </Components>
+    </Entity>
+
+    <Entity name="LGrayWall">
+      <Components>
+        <Transform position="22 0 0" scale="0.5 3 20" />
+        <RigidBody mass="0" />
+        <Collider type="Box" />
+      </Components>
+    </Entity>
+    <Entity name="RGrayWall">
+      <Components>
+        <Transform position="-22 0 0" scale="0.5 3 20" />
+        <RigidBody mass="0" />
+        <Collider type="Box" />
+      </Components>
+    </Entity>
+    <Entity name="BGrayWall">
+      <Components>
+        <Transform position="0 0 -20" scale="22 3 0.5" />
+        <RigidBody mass="0" />
+        <Collider type="Box" />
+      </Components>
+    </Entity>
+    <Entity name="FGrayWall">
+      <Components>
+        <Transform position="0 0 20" scale="22 3 0.5" />
+        <RigidBody mass="0" />
+        <Collider type="Box" />
+      </Components>
+    </Entity>
+
+    <Entity name="Step1">
+      <Components>
+        <Transform position="0 -2.8 -3" scale="1 0.5 0.5" />
+        <Model name="Block" />
+        <RigidBody mass="0" />
+        <Collider type="Box" />
+      </Components>
+    </Entity>
+
+    <Entity name="Step2">
+      <Components>
+        <Transform position="0 -2.3 -2.5" scale="1 0.5 0.5" />
+        <Model name="Block" />
+        <RigidBody mass="0" />
+        <Collider type="Box" />
+      </Components>
+    </Entity>
+    <Entity name="Step3">
+      <Components>
+        <Transform position="0 -2.05 -2" scale="1 0.75 0.5" />
+        <Model name="Block" />
+        <RigidBody mass="0" />
+        <Collider type="Box" />
+      </Components>
+    </Entity>
+
+    <Entity name="Pedestal">
+      <Components>
+        <Transform position="0 -1.75 0" scale="2 2 2" />
+        <Model name="Pedestal" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="1 1 1" />
+      </Components>
+    </Entity>
+
+    <Entity name="Crown">
+      <Components>
+        <Transform position="0 0 0" scale="0.3 0.3 0.3" />
+        <Model name="Crown" />
+        <Collider type="Box" />
+        <ItemBehaviour />
+        <ChangeSceneCollider animationTime="3" nextScene="main" />
+      </Components>
+    </Entity>
+
+    <Entity name="Floor">
+      <Components>
+        <Transform position="0 -3 0" scale="22 0.2 20" />
+        <Model name="Block" />
+        <RigidBody mass="0" />
+        <Collider type="Box" />
+      </Components>
+    </Entity>
+  </Entities>
+</Scene>
