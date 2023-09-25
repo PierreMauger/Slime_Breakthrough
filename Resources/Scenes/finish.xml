@@ -2,14 +2,14 @@
   <Entities>
     <Entity id="0" name="MainCamera">
       <Components>
-        <Transform position="0 1 -15" scale="0.5 0.5 0.5" />
+        <Transform position="0 1 -15" />
         <Camera forward="0 0 1" />
         <ThirdPersonCamera distance="10" playerEntity="3" sensibility="0.1" />
       </Components>
     </Entity>
     <Entity id="1" name="MainLight">
       <Components>
-        <Transform position="3 0 0" rotation="25 -15 40" scale="0.5 0.5 0.5" />
+        <Transform position="3 0 0" rotation="-30 180 0" />
         <Light type="Dir" />
       </Components>
     </Entity>
@@ -29,38 +29,9 @@
       </Components>
     </Entity>
 
-    <Entity name="LGrayWall">
-      <Components>
-        <Transform position="22 0 0" scale="0.5 3 20" />
-        <RigidBody mass="0" />
-        <Collider type="Box" />
-      </Components>
-    </Entity>
-    <Entity name="RGrayWall">
-      <Components>
-        <Transform position="-22 0 0" scale="0.5 3 20" />
-        <RigidBody mass="0" />
-        <Collider type="Box" />
-      </Components>
-    </Entity>
-    <Entity name="BGrayWall">
-      <Components>
-        <Transform position="0 0 -20" scale="22 3 0.5" />
-        <RigidBody mass="0" />
-        <Collider type="Box" />
-      </Components>
-    </Entity>
-    <Entity name="FGrayWall">
-      <Components>
-        <Transform position="0 0 20" scale="22 3 0.5" />
-        <RigidBody mass="0" />
-        <Collider type="Box" />
-      </Components>
-    </Entity>
-
     <Entity name="Step1">
       <Components>
-        <Transform position="0 -2.8 -3" scale="1 0.5 0.5" />
+        <Transform position="0 -2.55 5" scale="1 0.25 0.5" />
         <Model name="Block" />
         <RigidBody mass="0" />
         <Collider type="Box" />
@@ -69,7 +40,7 @@
 
     <Entity name="Step2">
       <Components>
-        <Transform position="0 -2.3 -2.5" scale="1 0.5 0.5" />
+        <Transform position="0 -2.3 5.5" scale="1 0.5 0.5" />
         <Model name="Block" />
         <RigidBody mass="0" />
         <Collider type="Box" />
@@ -77,7 +48,7 @@
     </Entity>
     <Entity name="Step3">
       <Components>
-        <Transform position="0 -2.05 -2" scale="1 0.75 0.5" />
+        <Transform position="0 -2.05 6" scale="1 0.75 0.5" />
         <Model name="Block" />
         <RigidBody mass="0" />
         <Collider type="Box" />
@@ -86,7 +57,7 @@
 
     <Entity name="Pedestal">
       <Components>
-        <Transform position="0 -1.75 0" scale="2 2 2" />
+        <Transform position="0 -1.75 8" scale="2 2 2" />
         <Model name="Pedestal" />
         <RigidBody mass="0" />
         <Collider type="Box" size="1 1 1" />
@@ -95,9 +66,10 @@
 
     <Entity name="Crown">
       <Components>
-        <Transform position="0 0 0" scale="0.3 0.3 0.3" />
+        <Transform position="0 0 8" scale="0.3 0.3 0.3" rotation="0 0 15" />
         <Model name="Crown" />
         <Collider type="Box" />
+        <Light type="Point" color="1 1 0.75" />
         <ItemBehaviour />
         <ChangeSceneCollider animationTime="3" nextScene="main" />
       </Components>
@@ -109,6 +81,202 @@
         <Model name="Block" />
         <RigidBody mass="0" />
         <Collider type="Box" />
+      </Components>
+    </Entity>
+
+    <Entity name="FWall1">
+      <Components>
+        <Transform position="16.5 -2.5 21" scale="1.5 1.5 1.5" />
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="FWall2">
+      <Components>
+        <Transform position="10 -2.5 21" scale="1.5 1.5 1.5" />
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="FWall3">
+      <Components>
+        <Transform position="3.5 -2.5 21" scale="1.5 1.5 1.5" />
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="FWall4">
+      <Components>
+        <Transform position="-3.5 -2.5 21" scale="1.5 1.5 1.5" />
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="FWall5">
+      <Components>
+        <Transform position="-10 -2.5 21" scale="1.5 1.5 1.5" />
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="FWall6">
+      <Components>
+        <Transform position="-16.5 -2.5 21" scale="1.5 1.5 1.5" />
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+
+    <Entity name="BWall1">
+      <Components>
+        <Transform position="16.5 -2.5 -21" scale="1.5 1.5 1.5" />
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="BWall2">
+      <Components>
+        <Transform position="10 -2.5 -21" scale="1.5 1.5 1.5" />
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="BWall3">
+      <Components>
+        <Transform position="3.5 -2.5 -21" scale="1.5 1.5 1.5" />
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="BWall4">
+      <Components>
+        <Transform position="-3.5 -2.5 -21" scale="1.5 1.5 1.5" />
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="BWall5">
+      <Components>
+        <Transform position="-10 -2.5 -21" scale="1.5 1.5 1.5" />
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="BWall6">
+      <Components>
+        <Transform position="-16.5 -2.5 -21" scale="1.5 1.5 1.5" />
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+
+    <Entity name="LWall1">
+      <Components>
+        <Transform position="21 -2.5 16.5" scale="1.5 1.5 1.5" rotation="0 90 0"/>
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="LWall2">
+      <Components>
+        <Transform position="21 -2.5 10" scale="1.5 1.5 1.5" rotation="0 90 0"/>
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="LWall3">
+      <Components>
+        <Transform position="21 -2.5 3.5" scale="1.5 1.5 1.5" rotation="0 90 0"/>
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="LWall4">
+      <Components>
+        <Transform position="21 -2.5 -3.5" scale="1.5 1.5 1.5" rotation="0 90 0"/>
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="LWall5">
+      <Components>
+        <Transform position="21 -2.5 -10" scale="1.5 1.5 1.5" rotation="0 90 0"/>
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="LWall6">
+      <Components>
+        <Transform position="21 -2.5 -16.5" scale="1.5 1.5 1.5" rotation="0 90 0"/>
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+
+    <Entity name="RWall1">
+      <Components>
+        <Transform position="-21 -2.5 16.5" scale="1.5 1.5 1.5" rotation="0 90 0"/>
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="RWall2">
+      <Components>
+        <Transform position="-21 -2.5 10" scale="1.5 1.5 1.5" rotation="0 90 0"/>
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="RWall3">
+      <Components>
+        <Transform position="-21 -2.5 3.5" scale="1.5 1.5 1.5" rotation="0 90 0"/>
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="RWall4">
+      <Components>
+        <Transform position="-21 -2.5 -3.5" scale="1.5 1.5 1.5" rotation="0 90 0"/>
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="RWall5">
+      <Components>
+        <Transform position="-21 -2.5 -10" scale="1.5 1.5 1.5" rotation="0 90 0"/>
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
+      </Components>
+    </Entity>
+    <Entity name="RWall6">
+      <Components>
+        <Transform position="-21 -2.5 -16.5" scale="1.5 1.5 1.5" rotation="0 90 0"/>
+        <Model name="Wall" />
+        <RigidBody mass="0" />
+        <Collider type="Box" size="4.5 4.2 1.5" />
       </Components>
     </Entity>
   </Entities>
