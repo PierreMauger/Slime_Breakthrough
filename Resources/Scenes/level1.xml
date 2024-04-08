@@ -300,56 +300,56 @@
 
     <Entity name="Obj1">
       <Components>
-        <Transform position="7 -1.75 21" scale="2.5 1 0.5" />
-        <Model name="Block" />
-        <Collider type="Box" />
+        <Transform position="7 -3 21" />
+        <Model name="spikes" />
+        <Collider type="Box" size="2.5 3 0.5" />
         <PopBehaviour directionX="-4.5" frequency="3" />
-        <KillingCollider />
+        <KillingCollider  />
       </Components>
     </Entity>
     <Entity name="Obj2">
       <Components>
-        <Transform position="-7 -1.75 21" scale="2.5 1 0.5" />
-        <Model name="Block" />
-        <Collider type="Box" />
+        <Transform position="-7 -3 21" />
+        <Model name="spikes" />
+        <Collider type="Box" size="2.5 3 0.5" />
         <PopBehaviour directionX="4.5" frequency="3" />
-        <KillingCollider />
+        <KillingCollider  />
       </Components>
     </Entity>
     <Entity name="Obj3">
       <Components>
-        <Transform position="7 -1.75 27" scale="2.5 1 0.5" />
-        <Model name="Block" />
-        <Collider type="Box" />
+        <Transform position="7 -3 27" />
+        <Model name="spikes" />
+        <Collider type="Box" size="2.5 3 0.5" />
         <PopBehaviour directionX="-4.5" frequency="4" />
-        <KillingCollider />
+        <KillingCollider  />
       </Components>
     </Entity>
     <Entity name="Obj4">
       <Components>
-        <Transform position="-7 -1.75 27" scale="2.5 1 0.5" />
-        <Model name="Block" />
-        <Collider type="Box" />
+        <Transform position="-7 -3 27" />
+        <Model name="spikes" />
+        <Collider type="Box" size="2.5 3 0.5" />
         <PopBehaviour directionX="4.5" frequency="4" />
-        <KillingCollider />
+        <KillingCollider  />
       </Components>
     </Entity>
     <Entity name="Obj5">
       <Components>
-        <Transform position="7 -1.75 33" scale="2.5 1 0.5" />
-        <Model name="Block" />
-        <Collider type="Box" />
+        <Transform position="7 -3 33" />
+        <Model name="spikes" />
+        <Collider type="Box" size="2.5 3 0.5" />
         <PopBehaviour directionX="-4.5" frequency="5" />
-        <KillingCollider />
+        <KillingCollider  />
       </Components>
     </Entity>
     <Entity name="Obj6">
       <Components>
-        <Transform position="-7 -1.75 33" scale="2.5 1 0.5" />
-        <Model name="Block" />
-        <Collider type="Box" />
+        <Transform position="-7 -3 33" />
+        <Model name="spikes" />
+        <Collider type="Box" size="2.5 3 0.5" />
         <PopBehaviour directionX="4.5" frequency="5" />
-        <KillingCollider />
+        <KillingCollider  />
       </Components>
     </Entity>
   </Entities>
