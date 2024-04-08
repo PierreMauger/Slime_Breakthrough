@@ -90,6 +90,14 @@
         <Collider type="Box" />
       </Components>
     </Entity>
+    <Entity name="FloorCorridor">
+      <Components>
+        <Transform position="0 -2.8 43" scale="1 0.2 3" />
+        <Model name="Ground" />
+        <RigidBody mass="0" />
+        <Collider type="Box" />
+      </Components>
+    </Entity>
     <Entity name="LWall1">
       <Components>
         <Transform position="10 -2.5 20" scale="1.5 1.5 1.5" />
