@@ -28,3 +28,11 @@ If you encounter any issues, have suggestions for improvements, or simply want t
 - **Programming:** PierreMauger
 - **Artwork:** Free assets
 - **Music and Sound Effects:** No one lol
+
+## Screenshots
+
+![Slime Breakthrough](./Screenshots/Screenshot1.png)
+![Slime Breakthrough](./Screenshots/Screenshot2.png)
+![Slime Breakthrough](./Screenshots/Screenshot3.png)
+![Slime Breakthrough](./Screenshots/Screenshot4.png)
+![Slime Breakthrough](./Screenshots/Screenshot5.png)
