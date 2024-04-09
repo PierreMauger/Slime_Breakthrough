@@ -1,6 +1,6 @@
 # Slime Breakthrough
 
-Welcome to the Slime Breakthrough demo, a small puzzle game where your goal is to get your crown back from a castle guarded by really basic parkour.\
+Welcome to the Slime Breakthrough demo, a small puzzle game where your goal is to get your crown back from a castle guarded by really basic hazards.\
 This game is provided as an example project on how to use LushEngine v1. All the resources are included, as well as a build of the game.\
 Please note that the game is running on an outdated version of the engine. Bugs are to be expected.
 
